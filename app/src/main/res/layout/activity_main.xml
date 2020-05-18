@@ -10,5 +10,8 @@
     <ListView
         android:id="@+id/lvMenu"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:entries="@array/nara" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
