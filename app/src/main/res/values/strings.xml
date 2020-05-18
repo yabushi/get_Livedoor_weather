@@ -1,9 +1,7 @@
 <resources>
     <string name="app_name">get_Livedoor_weather</string>
 
-    <string-array name="nara">
-        <item>奈良</item>
-    </string-array>
+
 
     <string name="nara_id">290010</string>
 </resources>
