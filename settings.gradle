@@ -1,0 +1,2 @@
+rootProject.name='get_Livedoor_weather'
+include ':app'
