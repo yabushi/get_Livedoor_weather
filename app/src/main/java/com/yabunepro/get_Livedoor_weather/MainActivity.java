@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<List<MinimumWeatherInfo>> call, Throwable t) {
-
+                tvTitle.setText(t.getMessage());
             }
         });
     }
