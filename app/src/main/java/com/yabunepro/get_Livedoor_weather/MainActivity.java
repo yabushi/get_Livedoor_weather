@@ -48,12 +48,8 @@ public class MainActivity extends AppCompatActivity {
                 String content = "";
                 content += "奈良の天気\n";
                 //ここに応答の内容を読み取ってcontentに入れる処理を記述
-                assert info != null;
-                MinimumWeatherInfo miniInfo = (MinimumWeatherInfo) info.get(0);
 
-                content += miniInfo.getDateLabel() + "\n";
-                content += miniInfo.getDate() + "\n";
-                content += miniInfo.getTelop() + "\n";
+
 
                 tvTitle.setText(content);
             }
