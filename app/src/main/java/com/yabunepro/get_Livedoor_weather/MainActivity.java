@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
         JsonPlaceHolderApi jsonPlaceHolderApi = retrofit.create(JsonPlaceHolderApi.class);
 
-        Call<List<MinimumWeatherInfo>> call = jsonPlaceHolderApi.getMinimumWeatherInfo();
+        Call<List<MinimumWeatherInfo>> call = jsonPlaceHolderApi.getMinimumWeatherInfo(290010);
 
         call.enqueue(new Callback<List<MinimumWeatherInfo>>() {
             @Override
