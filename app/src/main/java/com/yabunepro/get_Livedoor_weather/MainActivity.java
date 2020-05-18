@@ -38,6 +38,24 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<List<MinimumWeatherInfo>> call, Response<List<MinimumWeatherInfo>> response) {
 
+                if(!response.isSuccessful()){
+                    tvTitle.setText(response.code());
+                    return;
+                }
+
+                List<MinimumWeatherInfo> info = response.body();
+
+                String content = "";
+                content += "奈良の天気\n";
+                //ここに応答の内容を読み取ってcontentに入れる処理を記述
+                assert info != null;
+                MinimumWeatherInfo miniInfo = (MinimumWeatherInfo) info.get(0);
+
+                content += miniInfo.getDateLabel() + "\n";
+                content += miniInfo.getDate() + "\n";
+                content += miniInfo.getTelop() + "\n";
+
+                tvTitle.setText(content);
             }
 
             @Override
