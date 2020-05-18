@@ -6,7 +6,7 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 
 public interface JsonPlaceHolderApi {
-    @GET("json")
+    @GET("json/v1")
     Call<List<MinimumWeatherInfo>> getMinimumWeatherInfo();
 
 }
