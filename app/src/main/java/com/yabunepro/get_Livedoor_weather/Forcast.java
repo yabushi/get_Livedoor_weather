@@ -1,6 +1,6 @@
 package com.yabunepro.get_Livedoor_weather;
 
-public class Forecast {
+public class Forcast {
 
     private String date;
     private String dateLabel;
@@ -27,4 +27,5 @@ public class Forecast {
     public Temperature getTemperature() {
         return temperature;
     }
+
 }

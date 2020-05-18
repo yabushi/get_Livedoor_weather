@@ -7,9 +7,12 @@ import com.google.gson.JsonParseException;
 
 import java.lang.reflect.Type;
 
-public class MyDeserializer implements JsonDeserializer {
+public class MyDeserializer implements JsonDeserializer<Forcast> {
     @Override
-    public Object deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext context) throws JsonParseException {
+    public Forcast deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext context) throws JsonParseException {
+
+
+
         return null;
     }
 }

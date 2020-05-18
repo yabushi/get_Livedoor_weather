@@ -8,6 +8,6 @@ import retrofit2.http.Query;
 
 public interface JsonPlaceHolderApi {
     @GET("json/v1")
-    Call<List<MinimumWeatherInfo>> getMinimumWeatherInfo(@Query("city") int city);
+    Call<List<Forcast>> getForcasts(@Query("city") int city);
 
 }
