@@ -40,4 +40,6 @@
         android:text="天気"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvDate2" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
