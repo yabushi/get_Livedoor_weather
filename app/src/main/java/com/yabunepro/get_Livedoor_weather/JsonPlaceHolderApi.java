@@ -8,4 +8,5 @@ import retrofit2.http.GET;
 public interface JsonPlaceHolderApi {
     @GET("json")
     Call<List<MinimumWeatherInfo>> getMinimumWeatherInfo();
+
 }
